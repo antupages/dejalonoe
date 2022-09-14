@@ -1,0 +1,226 @@
+body {
+    font-family: Helvetica, sans-serif ;
+    background: #191919;
+    align-self: center;
+    height: 100%;
+}
+
+Li {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+h1 { 
+    text-transform: uppercase;
+    text-align: center;
+    color: #ea80be;
+    /*font-size: 4rem;*/
+}
+
+ H2{
+    color: #336aad;
+    text-transform: uppercase;
+}
+
+
+p {
+    color: #336aad;
+}
+
+label {
+    display: inline-block;
+    width: 70px;
+    color: #336aad;
+    text-transform: uppercase;
+}
+
+input {
+    color: #336aad;
+}
+
+footer{
+    background: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 50px;  
+    bottom: 0px; 
+    left: 0px; 
+}
+
+h3{
+    padding: 1rem;
+}
+
+h2{
+    padding: 2rem;
+}
+main{
+    padding: 5px;
+}
+
+#ListNav {
+     text-transform: uppercase;
+     text-align : center;
+     border: 1rem;
+     padding:1rem ;
+}
+
+/* FORMULARIO */
+.contenedor_formulario {
+    display: flex;
+    justify-content: space-around;
+    background-image: url("../img/dejalonoe-@eliashernan-uniclub15.jpg");
+    background-size: cover;
+
+}
+
+.formulario {
+    display: block;
+    padding: 1rem;
+    background: lightgray;
+}
+
+.top {
+    display: inline-flex;
+}
+
+
+.logo{
+    width: 6rem;
+
+}
+
+.nombrepag{
+    justify-content: center;
+}
+
+
+/* FECHAS */
+.fechas {
+    display: inline-flex;
+    color: white;
+    align-items: baseline;
+    padding: 1rem;
+}
+
+
+/*      pag index       */
+
+
+#mainindex {
+    /*background-image: url("../img/AAAA.jpg") ;
+    background-size: cover;*/
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.grid_index{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "noticia"
+        "imagen";
+}
+
+.imagen_index_{
+    /*width: 66%;*/
+    display: inline-flex;
+    grid-area: imagen;
+}
+.noticia {
+    grid-area: notica;
+    width: 30rem;
+    overflow: auto;
+
+}
+
+
+
+@media screen and(min-width: 700px){
+    .grid_index{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "imagen imagen noticia"
+            "imagen imagen noticia"
+            "imagen imagen noticia" ;
+    }
+
+}
+
+/*      PAG MERCH       */
+
+
+.mainmerch{  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+}
+.bloque_merch {
+    display: inline-block;
+    border-style: groove;
+    border-color: #336aad;
+}
+
+.Fotomerch{
+    display: inline-block;
+    width: 100%;
+    justify-items: center;
+}
+
+.M_unidad{
+    display: inline-block;
+    align-items: center ;
+    padding: 5px;
+}
+
+
+
+@media screen and (min-width: 768px) { /*tablet*/
+    .mainmerch{
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+
+    }
+}
+
+@media screen and (min-width: 1000px){ /*pc*/
+    .mainmerch{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+
+    }
+}
+
+/*    reproductor      */
+
+.rep{
+    display: inline-flex;
+
+}
+
+.repro{
+    display:inline-flex ;
+}
+.vinilo{
+    justify-content: flex-end;
+    display:inline-flex ;
+}
+
+
+@keyframes  rotar{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-359deg);
+    }
+}
+
+.animation {
+    animation: rotar 8s infinite linear;
+}
