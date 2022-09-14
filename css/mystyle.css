@@ -211,7 +211,6 @@ main{
     display:inline-flex ;
 }
 
-
 @keyframes  rotar{
     from {
         transform: rotate(0deg);
