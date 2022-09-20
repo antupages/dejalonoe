@@ -1,6 +1,6 @@
 body {
     font-family: Helvetica, sans-serif ;
-    background: #191919;
+    background: #191919!important;
     align-self: center;
     height: 100%;
 }
@@ -16,6 +16,11 @@ h1 {
     color: #ea80be;
     /*font-size: 4rem;*/
 }
+
+a {
+    color: #336aad!important;
+}
+
 
  H2{
     color: #336aad;
@@ -66,7 +71,10 @@ main{
      border: 1rem;
      padding:1rem ;
 }
+.mynavbar{
 
+background: #191919!important;
+}
 /* FORMULARIO */
 .contenedor_formulario {
     display: flex;
@@ -132,7 +140,8 @@ main{
     grid-area: imagen;
 }
 .noticia {
-    grid-area: notica;
+    /*grid-area: notica;*/
+    background: pink;
     width: 30rem;
     overflow: auto;
 
