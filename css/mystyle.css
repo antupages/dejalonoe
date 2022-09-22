@@ -146,19 +146,25 @@ background: #191919!important;
     overflow: auto;
 
 }
+#indexCel{   /*celular*/
+    display: none;
+}
+#indexPcMonitor{   /*celular*/
+    display: inline;
+}
+
+
 
 
 
 @media screen and(min-width: 700px){
-    .grid_index{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas:
-            "imagen imagen noticia"
-            "imagen imagen noticia"
-            "imagen imagen noticia" ;
-    }
 
+    #indexCel{   /*celular*/
+    display: inline;
+    }    
+    #indexPcMonitor{   /*celular*/
+    display: none;
+    }
 }
 
 /*      PAG MERCH       */
