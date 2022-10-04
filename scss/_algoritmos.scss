@@ -1,0 +1,21 @@
+$coloPrueba:(c1: #00FFFF, 
+             c2: #000000, 
+             c3: #A52A2A, 
+             c4: #6495ED, 
+             c5: #0000FF, 
+             c6: #FF7E50, 
+             c7: #8b008b, 
+             c8: #483d8b, 
+             c9: #2f4f4f,
+             c10: #808080, 
+             c11: #fffff0, 
+             c12: #fff0f5,
+             ); 
+
+
+@each $clrs, $color in $coloPrueba {
+   .color-#{$clrs} {
+       background-color: $color;
+   }
+}
+
