@@ -1,0 +1,30 @@
+/* index */
+
+#mainindex {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#noticia-wrap{
+	display: flex;
+	width: 100%
+}
+
+#caro-wrap{
+	width: 100%;
+}
+
+.grid_index{
+    display: grid;
+    display: inline;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+@media screen and (min-width: 768px) {
+  	.grid_index{
+    	display: flex;
+	};
+	#noticia_wrap { width: 25%;}
+	#caro-wrap{	width: 150%;}
+}

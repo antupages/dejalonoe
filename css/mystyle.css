@@ -75,34 +75,7 @@ main{
 
 background: #191919!important;
 }
-/* FORMULARIO */
-.contenedor_formulario {
-    display: flex;
-    justify-content: space-around;
-    background-image: url("../img/dejalonoe-@eliashernan-uniclub15.jpg");
-    background-size: cover;
 
-}
-
-.formulario {
-    display: block;
-    padding: 1rem;
-    background: lightgray;
-}
-
-.top {
-    display: inline-flex;
-}
-
-
-.logo{
-    width: 6rem;
-
-}
-
-.nombrepag{
-    justify-content: center;
-}
 
 
 /* FECHAS */
@@ -116,56 +89,6 @@ background: #191919!important;
 
 /*      pag index       */
 
-
-#mainindex {
-    /*background-image: url("../img/AAAA.jpg") ;
-    background-size: cover;*/
-    justify-content: flex-end;
-    align-items: center;
-}
-
-
-.grid_index{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-        "noticia"
-        "imagen";
-}
-
-.imagen_index_{
-    /*width: 66%;*/
-    display: inline-flex;
-    grid-area: imagen;
-}
-.noticia {
-    /*grid-area: notica;*/
-    background: pink;
-    width: 30rem;
-    overflow: auto;
-
-}
-#indexCel{   /*celular*/
-    display: none;
-}
-#indexPcMonitor{   /*celular*/
-    display: inline;
-}
-
-
-
-
-
-@media screen and(min-width: 700px){
-
-    #indexCel{   /*celular*/
-    display: inline;
-    }    
-    #indexPcMonitor{   /*celular*/
-    display: none;
-    }
-}
 
 /*      PAG MERCH       */
 

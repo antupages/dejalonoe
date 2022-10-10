@@ -1,21 +1,31 @@
-$coloPrueba:(c1: #00FFFF, 
-             c2: #000000, 
-             c3: #A52A2A, 
-             c4: #6495ED, 
-             c5: #0000FF, 
-             c6: #FF7E50, 
-             c7: #8b008b, 
-             c8: #483d8b, 
-             c9: #2f4f4f,
-             c10: #808080, 
-             c11: #fffff0, 
-             c12: #fff0f5,
-             ); 
+/*         algoritmos            */
 
 
-@each $clrs, $color in $coloPrueba {
-   .color-#{$clrs} {
-       background-color: $color;
-   }
+$textos: (
+   disp: inline-block,
+   alineacion: center,
+   pad: 5px,
+   color: $color2,
+);
+
+
+
+p {
+   display:map-get($textos, disp);
+   align-items:map-get($textos, alineacion);
+   padding:map-get($textos, pad);
+   color:map-get($textos, color);
 }
+
+H2 {
+  text-transform: uppercase; 
+  @extend p
+}
+
+@mixin sizes ($ancho, $alto){
+   width: $ancho;
+   height: $alto;
+};
+
+
 
