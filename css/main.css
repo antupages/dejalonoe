@@ -69,6 +69,18 @@ main {
 .mynavbar {
   background: #191919 !important; }
 
+.noVisible_pc {
+  display: none; }
+
+.Visible_cel {
+  display: flex; }
+
+@media screen and (min-width: 768px) {
+  .Visible_cel {
+    display: none; }
+  .noVisible_pc {
+    display: flex; } }
+
 /*MERCH*/
 .mainmerch {
   display: grid;
