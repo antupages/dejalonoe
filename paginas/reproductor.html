@@ -25,7 +25,8 @@
 			        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
 			        <li class="nav-item"><a class="nav-link" href="fechas.html">Fechas</a></li>
 			        <li class="nav-item"><a class="nav-link" href="merch.html">Merch</a></li>
-			        <li class="nav-item"><a class="nav-link" href="reproductor.html">Reproductor</a></li>
+			        <li class="nav-item"><a class="nav-link noVisible_pc" href="reproductor.html">Reproductor</a></li>
+			        <li class="nav-item"><a class="nav-link Visible_cel" href="https://www.youtube.com/watch?v=LtY3h0N1sHI&t=322s&ab_channel=D%C3%A9jaloNo%C3%A9">Reproductor</a></li><!--celular-->
 			      </ul>
 			    </div>
 			  </div>
@@ -33,25 +34,52 @@
 		</header>
 	<main>
 		<div class="container-fluid">
-			<div class="row"><h1>Nuestro ultimo arte: 'Calle random'</h1></div>
+			<div class="row"><h1 id="tit">Nuestro ultimo arte: 'Calle random'</h1></div>
 			<div class="row">
-				<div class="col-6">
-					<div class="repro">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/LtY3h0N1sHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="col-1"></div>
+				<div class="col-10 repro">
+					<div class="">
+						<iframe id="rep_" width="850" height="478.125" src="https://www.youtube.com/embed/LtY3h0N1sHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="">
+						<ul id="calle"><li><img src="../img/rueda.png"  class="animation rueda" alt="rueda1"><button onclick="cambio(a)">Calle random ( album completo )</button></li></ul>
+						<ul id="ahre"><li><img src="../img/rueda.png"   class="animation rueda" alt="rueda1"><button onclick="cambio(b)">Ahre</button></li></ul>
+						<ul id="zorzal"><li><img src="../img/rueda.png" class="animation rueda" alt="rueda1"><button onclick="cambio(c)" >El zorzal</button></li></ul>
+						<ul id="mejor"><li><img src="../img/rueda.png"  class="animation rueda" alt="rueda1"><button onclick="cambio(d)">La Carta Mejor</button></li></ul>
+						<ul id="bossi"><li><img src="../img/rueda.png"  class="animation rueda" alt="rueda1"><button onclick="cambio(e)" >Bossi</button></li></ul>
+						<ul id="stich"><li><img src="../img/rueda.png"  class="animation rueda" alt="rueda1"><button onclick="cambio(f)">Stich</button></li></ul>		
 					</div>
 				</div>
-				<div class="col-6">
-					<div class="vinilo">
-						<img src="../img/vinilo.png" class="animation" alt="vinilo">
-					</div>
-				</div>
+				<div class="col-1"></div>
 			</div>
 		</div>
 	</main>
 	<footer>
 		<p>Dejalo-noe®</p>
 	</footer>
-	<!-- JavaScript Bundle with Popper -->
+	<!-- JavaScript Bundle with Popper  --> 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+	
+	
+	<script>
+		
+		let a = "https://www.youtube.com/embed/LtY3h0N1sHI";
+		let b = "https://www.youtube.com/embed/VpY4rbQXrVg";
+		let c = "https://www.youtube.com/embed/upE8fwB_stA";
+		let d = "https://www.youtube.com/embed/uXYNckd-jGQ";
+		let e = "https://www.youtube.com/embed/V_M_FDky6ng";
+		let f = "https://www.youtube.com/embed/Uwd-E07KwOQ";
+
+		function cambio(arg) {
+			console.log(arg)
+			document.getElementById("rep_").src = arg
+		}
+
+	</script>  
 </body>
 </html>
+
+
+
+
+

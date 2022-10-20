@@ -60,6 +60,11 @@ h2 {
 main {
   padding: 5px; }
 
+button {
+  background-color: #191919;
+  color: #336aad;
+  border-color: #191919; }
+
 .top {
   display: inline-flex; }
 
@@ -167,17 +172,16 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10px; } }
 
-.rep {
-  display: inline-flex; }
+.dial {
+  justify-content: flex-end; }
 
 .repro {
   display: inline-flex; }
 
-.vinilo {
+.rueda {
   justify-content: flex-end;
-  display: inline-flex;
-  width: 500px;
-  height: 750px; }
+  width: 70px;
+  height: 70px; }
 
 @keyframes rotar {
   from {

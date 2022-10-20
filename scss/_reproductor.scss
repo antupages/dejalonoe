@@ -1,15 +1,13 @@
-.rep{
-    display: inline-flex;
-
+.dial{
+    justify-content: flex-end;
 }
 
 .repro{
     display:inline-flex ;
 }
-.vinilo{
+.rueda{
     justify-content: flex-end;
-    display:inline-flex ;
-    @include sizes (500px, 750px);
+    @include sizes (70px, 70px);
 }
 
 @keyframes  rotar{
