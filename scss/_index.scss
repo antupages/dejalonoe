@@ -25,6 +25,11 @@
   	.grid_index{
     	display: flex;
 	};
-	#noticia_wrap { width: 25%;}
+	
+	#noticia_wrap { 
+		width: 25%;
+		//overflow:auto;
+		//height: 800px;
+	}
 	#caro-wrap{	width: 150%;}
 }
