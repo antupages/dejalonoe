@@ -55,7 +55,7 @@ h3{
 }
 
 h2{
-    padding: 2rem;
+    padding: 1rem;
 }
 main{
     padding: 5px;
@@ -64,9 +64,19 @@ button{
     background-color: $color1;
     color: $color2;
     border-color: $color1;
+    font-size: 15px;
 
 }
 
+pre{
+    font-size: 15px;
+    text-align: left;
+    display:map-get($textos, disp);
+    align-items:map-get($textos, alineacion);
+    padding-right: 30px;
+    padding-left: 30px;
+    color:map-get($textos, color);
+}
 
 .top {
     display: inline-flex;
@@ -94,6 +104,7 @@ background: $color1!important;
         display: none;
     }
     .noVisible_pc{
-        display: flex;
+        display:flex;
     }
+
 }

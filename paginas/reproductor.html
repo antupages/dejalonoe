@@ -25,8 +25,7 @@
 			        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
 			        <li class="nav-item"><a class="nav-link" href="fechas.html">Fechas</a></li>
 			        <li class="nav-item"><a class="nav-link" href="merch.html">Merch</a></li>
-			        <li class="nav-item"><a class="nav-link noVisible_pc" href="reproductor.html">Reproductor</a></li>
-			        <li class="nav-item"><a class="nav-link Visible_cel" href="https://www.youtube.com/watch?v=LtY3h0N1sHI&t=322s&ab_channel=D%C3%A9jaloNo%C3%A9">Reproductor</a></li><!--celular-->
+			        <li class="nav-item"><a class="nav-link" href="reproductor.html">Reproductor</a></li>
 			      </ul>
 			    </div>
 			  </div>
@@ -35,13 +34,13 @@
 	<main>
 		<div class="container-fluid">
 			<div class="row"><h1 id="tit">Nuestro ultimo arte: 'Calle random'</h1></div>
-			<div class="row">
+			<div class="row noVisible_pc">
 				<div class="col-1"></div>
 				<div class="col-10 repro">
-					<div class="">
+					<div>
 						<iframe id="rep_" width="850" height="478.125" src="https://www.youtube.com/embed/LtY3h0N1sHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
-					<div class="">
+					<div>
 						<ul id="calle"><li><img src="../img/rueda.png"  class="animation rueda" alt="rueda1"><button onclick="cambio(a)">Calle random ( album completo )</button></li></ul>
 						<ul id="ahre"><li><img src="../img/rueda.png"   class="animation rueda" alt="rueda1"><button onclick="cambio(b)">Ahre</button></li></ul>
 						<ul id="zorzal"><li><img src="../img/rueda.png" class="animation rueda" alt="rueda1"><button onclick="cambio(c)" >El zorzal</button></li></ul>
@@ -51,6 +50,20 @@
 					</div>
 				</div>
 				<div class="col-1"></div>
+			</div>
+			<div class="row Visible_cel">
+				<div class="col-12">
+					<iframe id="rep_cel" width="850" height="478.125" src="https://www.youtube.com/embed/LtY3h0N1sHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="botonera">
+					<button onclick="cambio2(a)">Calle random ( album completo )</button>
+					<button onclick="cambio2(b)">Ahre</button>
+					<button onclick="cambio2(c)" >El zorzal</button>
+					<button onclick="cambio2(d)">La Carta Mejor</button>
+					<button onclick="cambio2(e)" >Bossi</button>
+					<button onclick="cambio2(f)">Stich</button>
+				</div>
+				
 			</div>
 		</div>
 	</main>
@@ -63,17 +76,39 @@
 	
 	<script>
 		
+
+		// script pc
+
+
 		let a = "https://www.youtube.com/embed/LtY3h0N1sHI";
 		let b = "https://www.youtube.com/embed/VpY4rbQXrVg";
 		let c = "https://www.youtube.com/embed/upE8fwB_stA";
 		let d = "https://www.youtube.com/embed/uXYNckd-jGQ";
 		let e = "https://www.youtube.com/embed/V_M_FDky6ng";
 		let f = "https://www.youtube.com/embed/Uwd-E07KwOQ";
+		 
+
+
 
 		function cambio(arg) {
 			console.log(arg)
 			document.getElementById("rep_").src = arg
-		}
+		};
+
+
+		// script cel
+
+		function cambio2 (sum) {
+			console.log(sum)
+			document.getElementById("rep_cel").src = sum
+			
+		};
+
+
+
+			//document.getElementById("rep_cel").src = num
+
+		
 
 	</script>  
 </body>
