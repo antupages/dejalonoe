@@ -14,7 +14,7 @@
 		<header>
 			<nav class="navbar navbar-expand-lg bg-light mynavbar">
 			  <div class="container-fluid">
-			    <a class="navbar-brand" href="#"><img src="../img/logo.png" class="logo"></a>
+			    <a class="navbar-brand" href="#"><img src="../LOGO.png" class="logo"></a>
 			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			      <span class="navbar-toggler-icon"></span>
 			    </button>
@@ -33,22 +33,35 @@
 	<main>
 		<div class="contenedor_formulario"><!--contenedor general pagina --> 
  			<div class="formulario">  
-			   	<h1>Formulario de contacto</h1>
+			   	<h1>contactanos</h1>
 			   	<form action="">  
-			        <label for="nombre">Nombre:	</label>
-			        <input type="text" name="nombre">  
-			        <br>				        
-				    <label for="correo electronico">email:	</label>
-				    <input type="email" name="correo electronico">		 
-				    <br>
-			        <textarea cols="40" rows="10" name="tu consulta"></textarea>
-				    <br>
-				    <input type="checkbox" value="1" name="terminos">¿Acepta terminos? 
-					<input type="checkbox" value="2" name="terminos">cepto recibir mails con noticias 
-				    <br>
-				    <br>
-				    <input type="submit">
-				    <input type="reset" value="borrar">
+			        <div class="form_esp">
+			        	<label for="nombre">Nombre:	</label>
+			        	<input type="text" name="nombre">  
+			        </div>
+			        <div class="form_esp">			        
+				    	<label for="correo electronico">email:	</label>
+				    	<input type="email" name="correo electronico">		 
+				    </div>
+				    <div>
+				    	<select class="form-select">
+				    		<option selected>motivo de contacto</option>
+							<option value="1">Pedido de merch</option>
+  							<option value="2">Contrataciones</option>
+  							<option value="3">Fan mail</option>
+						</select>
+				    </div>
+				    <div class="form_esp">
+			        	<textarea cols="40" rows="10" name="tu consulta"></textarea>
+				    </div>
+				    <div class="form_esp">
+				    	<input type="checkbox" value="1" name="terminos"><p>¿Acepta terminos?</p> 
+						<input type="checkbox" value="2" name="terminos"><p>recibir mails con novedaes</p> 
+				    </div>
+				    <div class="form_esp">
+				    	<input type="submit">
+				    	<input type="reset" value="borrar">
+			   		</div>
 			   	</form>
 			</div>
 			<div class="formulario">

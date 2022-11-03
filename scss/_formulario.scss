@@ -1,13 +1,14 @@
 /* FORMULARIO */
 .contenedor_formulario {
-    display: grid;
     justify-content: space-around;
 }
 
 .formulario {
     display: block;
-    padding: 1rem;
-    background: lightgray;
+    padding: 20px;
+    margin-right: 0%;
+    margin-left: 0%;
+
 }
 
 .top {
@@ -16,16 +17,23 @@
 
 .contenedor_redes{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
+
+.form_esp{
+    padding-bottom: 15px;
+}
+
 
 
 
 @media screen and (min-width: 768px) { /*tablet*/
     .contenedor_formulario {
-        grid-template-columns: 1fr 1fr;
         grid-column-gap: 10px;
-
+    }
+    .formulario {
+        margin-right: 39%;
+        margin-left: 39%;
     }
 }
 
